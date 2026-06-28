@@ -11,7 +11,7 @@
  * ⚠ No trailing slash.
  */
 
-const API_BASE = 'https://web-production-7f1ce.up.railway.app/';
+const API_BASE = 'web-production-7f1ce.up.railway.app';
 
 function apiUrl(path) {
   if (API_BASE) {
