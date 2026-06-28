@@ -1,14 +1,10 @@
 /*
- * app.js — CORE APPLICATION LOGIC
- * ══════════════════════════════════
- * Theme toggle, score display, toast notifications,
- * guestbook, mystery fill-in, identity votes, keyboard
- * shortcuts, category display, and page initialization.
- *
- * You generally don't need to edit this file unless
- * you want to change how the API routes work or add
- * new interactive features.
- */
+app.js — CORE APPLICATION LOGIC
+══════════════════════════════════
+Theme toggle, score display, toast notifications,
+guestbook, mystery fill-in, identity votes, keyboard
+shortcuts, category display, and page initialization.
+*/
 
 /* ═══ THEME ═══ */
 let theme = localStorage.getItem('debo-theme') || 'light';
@@ -32,7 +28,7 @@ function applyTheme(t) {
 function updateScore() {
   const hi = Math.max(score, parseInt(localStorage.getItem('debo-hi') || '0'));
   localStorage.setItem('debo-hi', hi);
-  document.getElementById('scoreDisplay').textContent =
+  document.getElementById('scoreDisplay').textContent = 
     'HI ' + String(hi).padStart(5,'0') + ' ' + String(score).padStart(5,'0');
 }
 
@@ -61,11 +57,12 @@ function showToast(msg) {
 /* ═══ MYSTERY ═══ */
 async function loadMystery() {
   try {
-    const res = await fetch('/api/deborasaurusrex/mystery');
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/mystery'));
     const data = await res.json();
     renderMystery(data);
   } catch(e) {
-    document.getElementById('mysteryContainer').innerHTML =
+    document.getElementById('mysteryContainer').innerHTML = 
       '<div class="empty-state">Couldn\'t load mysteries 🦴</div>';
   }
 }
@@ -79,9 +76,9 @@ function renderMystery(data) {
     div.innerHTML = `
       <div class="mystery-prompt">${info.prompt}</div>
       <div class="mystery-answers-list" id="mystery-pills-${key}">
-        ${info.answers.length === 0
-          ? '<span style="font-size:12px;color:var(--text2)">No answers yet — be the first!</span>'
-          : info.answers.map(a => `<span class="mystery-answer-pill" title="${a.visitor_name}">${a.answer}</span>`).join('')
+        ${info.answers.length === 0 
+          ? '<span style="font-size:12px;color:var(--text2)">No answers yet — be the first!</span>' 
+          : info.answers.map(a => `<span class="mystery-answer-pill" title="${escHtml(a.visitor_name)}">${escHtml(a.answer)}</span>`).join('')
         }
       </div>
       <div class="mystery-input-row">
@@ -97,21 +94,26 @@ async function submitMystery(key) {
   const input = document.getElementById(`mystery-input-${key}`);
   const answer = input.value.trim();
   if (!answer) return;
+  
   try {
-    const res = await fetch('/api/deborasaurusrex/mystery', {
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/mystery'), {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ question_key: key, answer, visitor_name: 'Visitor' })
     });
     if (!res.ok) throw new Error();
+    
     input.value = '';
     const pillsDiv = document.getElementById(`mystery-pills-${key}`);
     const prev = pillsDiv.querySelector('span[style]');
     if (prev) pillsDiv.removeChild(prev);
+    
     const pill = document.createElement('span');
     pill.className = 'mystery-answer-pill';
     pill.textContent = answer;
     pillsDiv.appendChild(pill);
+    
     showToast('Answer added! 🦕');
     if (theme === 'dark') { score += 20; updateScore(); }
   } catch(e) {
@@ -122,11 +124,12 @@ async function submitMystery(key) {
 /* ═══ IDENTITY ═══ */
 async function loadIdentity() {
   try {
-    const res = await fetch('/api/deborasaurusrex/identity');
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/identity'));
     const data = await res.json();
     renderIdentity(data);
   } catch(e) {
-    document.getElementById('identityContainer').innerHTML =
+    document.getElementById('identityContainer').innerHTML = 
       '<div class="empty-state">Couldn\'t load categories 🦴</div>';
   }
 }
@@ -137,14 +140,11 @@ function renderIdentity(data) {
   for (const [key, info] of Object.entries(data)) {
     const div = document.createElement('div');
     div.className = 'identity-cat';
+    
     const optionsHtml = info.options.length === 0
       ? '<span style="font-size:12px;color:var(--text2)">Cast the first vote!</span>'
-      : info.options.map(o =>
-          `<div class="identity-result">
-            <span>${o.option_text}</span>
-            <span class="count">${o.votes}</span>
-          </div>`
-        ).join('');
+      : info.options.map(o => `<div class="identity-result"><span>${escHtml(o.option_text)}</span><span class="count">${o.votes}</span></div>`).join('');
+      
     div.innerHTML = `
       <div class="identity-label">${info.label}</div>
       <div class="identity-results" id="identity-results-${key}">${optionsHtml}</div>
@@ -161,13 +161,16 @@ async function submitIdentity(key) {
   const input = document.getElementById(`identity-input-${key}`);
   const option_text = input.value.trim();
   if (!option_text) return;
+  
   try {
-    const res = await fetch('/api/deborasaurusrex/identity', {
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/identity'), {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ category: key, option_text, visitor_name: 'Visitor' })
     });
     if (!res.ok) throw new Error();
+    
     input.value = '';
     await loadIdentity();
     showToast('Vote cast! Democracy wins 🦕');
@@ -188,11 +191,12 @@ function selectEmoji(el) {
 
 async function loadGuestbook() {
   try {
-    const res = await fetch('/api/deborasaurusrex/guestbook');
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/guestbook'));
     const entries = await res.json();
     renderGuestbook(entries);
   } catch(e) {
-    document.getElementById('guestbookEntries').innerHTML =
+    document.getElementById('guestbookEntries').innerHTML = 
       '<div class="empty-state">Guestbook taking a nap 🦕</div>';
   }
 }
@@ -203,6 +207,7 @@ function renderGuestbook(entries) {
     container.innerHTML = '<div class="empty-state">No entries yet — write the first one! 🦕</div>';
     return;
   }
+  
   container.innerHTML = entries.map(e => {
     const date = new Date(e.created_at + 'Z');
     const timeStr = date.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
@@ -214,7 +219,8 @@ function renderGuestbook(entries) {
           <span class="entry-time">${timeStr}</span>
         </div>
         <div class="entry-msg">${escHtml(e.message)}</div>
-      </div>`;
+      </div>
+    `;
   }).join('');
 }
 
@@ -223,13 +229,16 @@ async function submitGuestbook(e) {
   const name = document.getElementById('gbName').value.trim();
   const message = document.getElementById('gbMessage').value.trim();
   if (!name || !message) return;
+  
   try {
-    const res = await fetch('/api/deborasaurusrex/guestbook', {
+    // UPDATED: Using apiUrl() to connect to Railway
+    const res = await fetch(apiUrl('/guestbook'), {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ visitor_name: name, message, dino_emoji: selectedEmoji })
     });
     if (!res.ok) throw new Error();
+    
     document.getElementById('gbName').value = '';
     document.getElementById('gbMessage').value = '';
     showToast('Signed! Welcome to the pack 🦕');
@@ -241,8 +250,13 @@ async function submitGuestbook(e) {
 }
 
 /* ═══ HTML ESCAPE ═══ */
+// FIXED: Properly escapes HTML entities to prevent formatting issues
 function escHtml(s) {
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 /* ═══ KEYBOARD SHORTCUT (dark mode: hero dino jump) ═══ */
@@ -270,19 +284,19 @@ window.togglePoem = function (idx) {
 function showCat(key) {
   // Render the panel content from about-data.js on first open
   renderCatPanel(key);
-
   const panel = document.getElementById('cat-' + key);
   const btn   = [...document.querySelectorAll('.cat-btn')].find(b => b.getAttribute('onclick') === `showCat('${key}')`);
   const isOpen = panel && panel.classList.contains('visible');
-
+  
   document.querySelectorAll('.cat-panel').forEach(p => p.classList.remove('visible'));
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-
+  
   if (!isOpen && panel) {
     panel.classList.add('visible');
     if (btn) btn.classList.add('active');
     setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
   }
+  
   if (theme === 'dark') { score += 5; updateScore(); }
 }
 
