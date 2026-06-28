@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "comment": "Static-only Vercel deploy. Poems, game, PIN, music, themes all work fine. The guestbook / mystery / identity features need a persistent backend (see README for options).",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api-disabled.html",
+      "status": 503
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

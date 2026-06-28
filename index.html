@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deborasaurus Rex 🦕</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="ground-strip"></div>
+<div class="cactus-row">🌵🌵</div>
+
+<div class="page">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="score-display" id="scoreDisplay">HI 00000 00000</div>
+    <button class="theme-btn" id="musicBtn" onclick="toggleMusic()" data-track="toggle_music" title="Toggle background music">🔇</button>
+    <button class="theme-btn" onclick="toggleTheme()" data-track="toggle_theme">
+      <span id="themeLabel">🌙 Dino Mode</span>
+    </button>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <span class="dino-runner" id="dinoEmoji" onclick="dinoJump()" title="tap me!">🦕</span>
+    <h1 class="hero-name">DEBORASAURUS REX</h1>
+    <p class="hero-tagline">
+      Loud opinions, soft heart, zero chill about things I care about.<br>
+      Welcome to my corner of the internet 🌿
+    </p>
+    <div class="hero-badges">
+      <span class="badge">🌍 Planet-sized personality</span>
+      <span class="badge">🦕 Dino enthusiast</span>
+      <span class="badge">☕ Caffeine dependent</span>
+      <span class="badge">🎨 Chaotic creative</span>
+      <span class="badge">🌙 Night owl</span>
+    </div>
+  </div>
+
+  <div class="section-divider">🦴 · · · 🦕 · · · 🦴</div>
+
+  <!-- ══════════════════════════════════════════════════════
+       ALL ABOUT KATE — game-gated
+  ══════════════════════════════════════════════════════ -->
+  <div class="card" id="aboutCard">
+    <div class="card-title"><span class="icon">🦕</span> All About Kate — Pick a Category</div>
+
+    <!-- GAME LOCK -->
+    <div class="game-lock" id="gameLock">
+      <div class="lock-header">
+        <span class="lock-icon">🔒</span>
+        <div class="lock-title">SECTION LOCKED</div>
+        <div class="lock-subtitle">
+          Survive the dino run and hit <strong>1,900 points</strong> to unlock Kate's info.<br>
+          Good luck. You'll need it.
+        </div>
+      </div>
+
+      <div class="game-wrap" id="gameWrap">
+        <canvas id="dinoCanvas" width="600" height="150"></canvas>
+        <div class="game-over-overlay hidden" id="gameOverlay">
+          <div class="game-over-title">GAME OVER</div>
+          <div class="game-over-sub" id="overlayScore"></div>
+          <button class="game-restart-btn" onclick="restartGame()">▶ RESTART</button>
+        </div>
+      </div>
+
+      <div class="game-hint" id="gameHint">SPACE / click to jump · double-tap = double jump</div>
+      <button class="jump-btn" id="jumpBtn" data-track="dino_jump">▲ JUMP</button>
+
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-labels">
+          <span id="progressScore">0 pts</span>
+          <span>🏆 1,900 pts to unlock</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNLOCKED CONTENT — panels are populated by about-data.js -->
+    <div id="catUnlocked" style="display:none">
+      <div class="unlock-banner" id="unlockBanner">
+        <div class="unlock-banner-title">🦕 UNLOCKED — WELL PLAYED!</div>
+        <div class="unlock-banner-sub">You survived the dino run. Kate's secrets are yours.</div>
+      </div>
+      <div class="cat-unlocked-wrap">
+        <div class="cat-grid">
+          <button class="cat-btn" onclick="showCat('basic')"         data-track="view_basic_info">       👤 Basic Info</button>
+          <button class="cat-btn" onclick="showCat('family')"        data-track="view_family">           👨‍👩‍👧 Family</button>
+          <button class="cat-btn" onclick="showCat('education')"     data-track="view_education">        🎓 Education</button>
+          <button class="cat-btn" onclick="showCat('hobbies')"       data-track="view_hobbies">          🎸 Hobbies</button>
+          <button class="cat-btn" onclick="showCat('food')"          data-track="view_food">             🍗 Food & Drinks</button>
+          <button class="cat-btn" onclick="showCat('entertainment')" data-track="view_entertainment">    🎬 Entertainment</button>
+          <button class="cat-btn" onclick="showCat('misc')"          data-track="view_misc">             🌈 Miscellaneous</button>
+          <button class="cat-btn" onclick="showCat('likesdislikes')" data-track="view_likes_dislikes">   💚 Likes & Dislikes</button>
+          <button class="cat-btn" onclick="showCat('social')"        data-track="view_social">           📱 Social Media</button>
+          <button class="cat-btn" onclick="showCat('rapidfire')"     data-track="view_rapid_fire">       ⚡ Rapid-Fire</button>
+        </div>
+
+        <!-- Empty panels — content injected by about-data.js / renderCatPanel() -->
+        <div class="cat-panel" id="cat-basic"></div>
+        <div class="cat-panel" id="cat-family"></div>
+        <div class="cat-panel" id="cat-education"></div>
+        <div class="cat-panel" id="cat-hobbies"></div>
+        <div class="cat-panel" id="cat-food"></div>
+        <div class="cat-panel" id="cat-entertainment"></div>
+        <div class="cat-panel" id="cat-misc"></div>
+        <div class="cat-panel" id="cat-likesdislikes"></div>
+        <div class="cat-panel" id="cat-social"></div>
+        <div class="cat-panel" id="cat-rapidfire"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       POEMS — PIN gated
+  ══════════════════════════════════════════════════════ -->
+  <div class="card" id="poemsCard">
+    <div class="card-title"><span class="icon">📜</span> Kate's Private Poems</div>
+
+    <!-- PIN LOCK -->
+    <div id="poemPinLock">
+      <div class="pin-card-header">
+        <span class="pin-lock-icon">🔐</span>
+        <div class="pin-title">THIS COLLECTION IS PRIVATE</div>
+        <div class="pin-subtitle">These poems are Kate's. Enter the PIN to read them.</div>
+        <div class="pin-clue">Clue: <strong>"ordeal and some numbers"</strong></div>
+      </div>
+
+      <div class="pin-input-area" id="pinArea" onclick="focusPinInput()">
+        <input type="tel" id="pinHidden" maxlength="6" autocomplete="off"
+               class="pin-hidden-input" oninput="onPinInput()" onblur="onPinBlur()" onfocus="onPinFocus()">
+        <div class="pin-boxes" id="pinBoxes">
+          <div class="pin-box" id="pb0"></div>
+          <div class="pin-box" id="pb1"></div>
+          <div class="pin-box" id="pb2"></div>
+          <div class="pin-box" id="pb3"></div>
+          <div class="pin-box" id="pb4"></div>
+          <div class="pin-box" id="pb5"></div>
+        </div>
+        <div class="pin-tap-hint">Tap to enter PIN</div>
+      </div>
+      <div class="pin-error" id="pinError"></div>
+    </div>
+
+    <!-- UNLOCKED POEMS — list is populated by poems.js / renderPoems() -->
+    <div id="poemsContent" style="display:none">
+      <div class="poems-unlock-banner" id="poemsUnlockBanner">
+        <div class="poems-unlock-banner-title">📜 UNLOCKED</div>
+        <div class="poems-unlock-banner-sub">These are Kate's words. Read them gently.</div>
+      </div>
+      <div class="poem-list" id="poem-list">
+        <!-- Poems are injected here by renderPoems() in poems.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       THE DOSSIER
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🗺️</span> The Dossier</div>
+    <div class="about-grid">
+      <div class="about-item">
+        <strong>Currently</strong>
+        Plotting world domination from my couch, one idea at a time
+      </div>
+      <div class="about-item">
+        <strong>Favourite dino</strong>
+        Pachycephalosaurus — it headbutted everything and I respect that
+      </div>
+      <div class="about-item">
+        <strong>Life philosophy</strong>
+        "Good enough" is the enemy of "actually finished"
+      </div>
+      <div class="about-item">
+        <strong>Alignment</strong>
+        Chaotic good with neutral tendencies after 10pm
+      </div>
+      <div class="about-item">
+        <strong>Spirit animal</strong>
+        A capybara who somehow ended up in charge
+      </div>
+      <div class="about-item">
+        <strong>Greatest fear</strong>
+        Mediocre snacks at important events
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       STRONG OPINIONS
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">⚡</span> Strong Opinions</div>
+    <div class="two-col">
+      <div>
+        <div class="card-title" style="margin-bottom:10px;font-size:9px;">Obsessed with</div>
+        <ul class="loves-list">
+          <li>Unnecessarily long playlists</li>
+          <li>Niche documentaries at 2am</li>
+          <li>Hot sauce on everything</li>
+          <li>Maps of places I'll never go</li>
+          <li>The smell of old bookshops</li>
+          <li>Animals with no business being that big</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card-title" style="margin-bottom:10px;font-size:9px;">Crimes against humanity</div>
+        <ul class="hates-list">
+          <li>Vague calendar invites</li>
+          <li>People who "reply all" unnecessarily</li>
+          <li>Fonts that look almost right</li>
+          <li>Warm fizzy drinks</li>
+          <li>Slow walkers in wide corridors</li>
+          <li>The word "synergy"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       ORIGIN STORY (TIMELINE)
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📅</span> Origin Story</div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">THE BEGINNING</span>
+        Arrived on this planet with strong opinions and a lot of hair. Priorities unchanged.
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">THE SCHOOL ERA</span>
+        Discovered that being too loud in class and being very good at something are not mutually exclusive.
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">THE CHAOS YEARS</span>
+        Moved, changed, grew, regretted some haircuts, regretted zero opinions. Net positive.
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">RIGHT NOW</span>
+        Still figuring it out, but doing so in very stylish footwear.
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider">· · · · · · · · ·</div>
+
+  <!-- ══════════════════════════════════════════════════════
+       VISITOR ORACLE (Mystery fill-in)
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🔮</span> Visitor Oracle — You Fill In The Blanks</div>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:18px;line-height:1.6;">
+      These are the mysteries of Kate. Only YOU can answer them. Add your theory below each question — the best ones live here forever.
+    </p>
+    <div id="mysteryContainer">
+      <div class="empty-state">Loading mysteries…</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       IDENTITY DEMOCRACY
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🧬</span> Kate's Identity — Decided By Democracy</div>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:18px;line-height:1.6;">
+      Kate refuses to answer these herself. Visitors vote. The people decide.
+    </p>
+    <div id="identityContainer">
+      <div class="empty-state">Loading categories…</div>
+    </div>
+  </div>
+
+  <div class="section-divider">🌿 · · · 🦕 · · · 🌿</div>
+
+  <!-- ══════════════════════════════════════════════════════
+       GUESTBOOK
+  ══════════════════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📖</span> The Guestbook</div>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:18px;line-height:1.6;">
+      You visited. You existed here. Leave a mark.
+    </p>
+
+    <form class="guestbook-form" onsubmit="submitGuestbook(event)" data-track="submit_guestbook">
+      <input type="text" id="gbName" placeholder="Your name (or alias, no judgement)" maxlength="80" required>
+      <textarea id="gbMessage" placeholder="Say something. Anything. Even if it's just 'hi Kate 🦕'" rows="3" maxlength="500" required></textarea>
+      <div class="emoji-picker">
+        <span>Pick a dino:</span>
+        <span class="emoji-option selected" data-emoji="🦕" onclick="selectEmoji(this)">🦕</span>
+        <span class="emoji-option" data-emoji="🦖" onclick="selectEmoji(this)">🦖</span>
+        <span class="emoji-option" data-emoji="🐉" onclick="selectEmoji(this)">🐉</span>
+        <span class="emoji-option" data-emoji="🐊" onclick="selectEmoji(this)">🐊</span>
+        <span class="emoji-option" data-emoji="🐢" onclick="selectEmoji(this)">🐢</span>
+        <span class="emoji-option" data-emoji="🦎" onclick="selectEmoji(this)">🦎</span>
+      </div>
+      <button type="submit" class="btn" data-track="submit_guestbook_entry">Sign the guestbook 🦕</button>
+    </form>
+
+    <div id="guestbookEntries" class="guestbook-entries">
+      <div class="empty-state">Loading…</div>
+    </div>
+  </div>
+
+  <footer>
+    <div style="font-size:24px;margin-bottom:8px;">🦕</div>
+    Made with excessive enthusiasm · Est. Cretaceous Period<br>
+    <span style="font-size:10px;">No dinosaurs were harmed in the making of this website</span>
+  </footer>
+
+</div><!-- .page -->
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     SCRIPTS — load order matters:
+       1. poems.js    (defines POEMS array + renderPoems)
+       2. about-data.js (defines ABOUT_CATEGORIES + renderCatPanel)
+       3. pin.js      (PIN lock IIFE)
+       4. music.js    (ambient music IIFE)
+       5. game.js     (dino game IIFE)
+       6. app.js      (theme, APIs, init — calls renderPoems())
+══════════════════════════════════════════════════════ -->
+<script src="js/poems.js"></script>
+<script src="js/about-data.js"></script>
+<script src="js/pin.js"></script>
+<script src="js/music.js"></script>
+<script src="js/game.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
