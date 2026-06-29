@@ -2217,7 +2217,16 @@ it never tells me what I'm worth.
 
 It only tells me how long I've forgotten that worth—
 was never measured on earth.`
-  }
+  },
+{
+  id: 36,               // ← next number after the last poem
+  title: 'Your Title',
+  dataTrack: 'read_poem_yourtitle',   // lowercase, underscores, no spaces
+  text: `Your poem text here.
+Line two.
+
+New stanza starts here.`
+}
 ];
 
 /* ─────────────────────────────────────────────────────────
