@@ -245,7 +245,7 @@ async function submitGuestbook(e) {
     if (theme === 'dark') { score += 50; updateScore(); }
     await loadGuestbook();
   } catch(e) {
-    showToast('Something went wrong — try again 🦖');
+  showToast('Error: ' + e.message + ' | URL: ' + apiUrl('/guestbook'));
   }
 }
 
