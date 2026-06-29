@@ -244,8 +244,8 @@ async function submitGuestbook(e) {
     showToast('Signed! Welcome to the pack 🦕');
     if (theme === 'dark') { score += 50; updateScore(); }
     await loadGuestbook();
-  } catch(e) {
-  showToast('Error: ' + e.message + ' | URL: ' + apiUrl('/guestbook'));
+  } catch(err) {
+  showToast(apiUrl('/guestbook'));
   }
 }
 
