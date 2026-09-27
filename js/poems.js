@@ -73,17 +73,17 @@ I have been pursuing all along.`
     text: `I have this pit in my stomach, whenever things are going well,
 as if pain is around the corner and everybody except me can tell.
 
-So i start preparing for it.
+So I start preparing for it.
 How bad could it be?
 I catastrophize, romanticize, and unconsciously wish the worst for me.
 
-If i prepare, it can't hurt me.
-If i prepare, i'll be fine.
-If i overthink, it won't hurt
+If I prepare, it can't hurt me.
+If I prepare, i'll be fine.
+If I overthink, it won't hurt
 when I'm ripped away from these dreams of mine.
 
 When my crush doesn't like me,
-When i fail another test,
+When I fail another test,
 how bad could it be?
 when my imagination is at its best.
 
@@ -146,8 +146,8 @@ I'm gonna mess everything up.
 and I have to watch it replay everyday
 in my mind. I'll regret everything that I say,
 
-but i don't say that—
-instead, I taught myself to be alive,
+but i don't say that— instead, 
+I taught myself to be alive,
 instead of wishing to be dead.
 
 The thing about pain is that it always follows,
@@ -314,7 +314,8 @@ she holds on to me tighter
 I'm all out of matches, a little kid grabs a lighter
 
 So many second chances, and an aunt grabs a bat,
-the room turns to rage, my younger self rips page after page.
+the room turns to rage, 
+my younger self rips page after page.
 
 I cover the body in my arms,
 I don't want her to see the embodiment of her fears,
@@ -359,7 +360,7 @@ and if you still must replay what he said—
 
 may it be "you're beautiful, you're witty, you're charming."
 the kind of connection
-that you meet in the church one day, and realize you must be going in the right direction.
+that you meet one day, and realize you must be going in the right direction.
 
 Because to meet someone so wonderful has to be pre-planned,
 May you try to wipe your tears and instead be met with somebody else's loving hands.
@@ -1077,120 +1078,6 @@ the other is hand delivered,
   },
   {
     id: 21,
-    title: 'co-dependent',
-    dataTrack: 'read_poem_codependent',
-    text: `I think my problem is that somewhere along the way,
-I became customer support.
-Not officially, of course.
-There's no uniform. No training report.
-
-No employee handbook explaining what to do,
-when everyone needs something—
-and they all need you.
-
-But somehow my number ended up in the queue,
-and now everybody calls when they don't know what to do.
-
-Some people need answers.
-Some people need advice.
-Some people need reassurance— served warm and nice.
-
-Some people need a version of me, that's calmer than I can be.
-And the strange thing is, I usually agree.
-
-Because I've spent so long being reliable,
-dependable, available, stable,
-that eventually those things stopped being skills,
-and started becoming labels.
-
-The problem with being dependable, is eventually people depend.
-Then they depend. Then they depend again.
-Until one day you're carrying so much weight your own thoughts can't get in.
-
-Mine have been standing outside for years,
-waiting patiently to get in.
-Sometimes people ask what I do to relax,
-and I never know the facts.
-
-Because whenever life gets quiet,
-I immediately start looking for cracks.
-A deadline. A problem. A task.
-Anything to keep my mind from having to look back.
-
-Peace makes me nervous.
-That's the truth.
-Like a fire alarm going silent inside a burning roof.
-
-Everybody else says,
-"Finally, some quiet."
-Meanwhile I'm checking every corner trying to find the riot.
-
-Because if nothing is wrong,
-then why am I preparing?
-Why is my heart still racing— like there's something worth fearing?
-
-I think I've spent so much time surviving
-I forgot what living meant.
-So when life gives me calm,
-I accidentally call it an event.
-
-I create little emergencies.
-Nothing too severe.
-Just enough stress to feel familiar,
-just enough noise to hear.
-
-Because calm feels foreign.
-Stress feels home.
-I'd rather pace a hallway than sit in a peaceful room alone.
-
-My mind never stops talking.
-It should probably charge a fee.
-It hosts meetings at three in the morning and somehow invites every version of me.
-
-One voice predicts disaster.
-One voice reviews mistakes.
-One voice rewrites conversations until the sunrise breaks.
-
-Every possible outcome gets discussed and inspected.
-And somehow the worst-case scenario is always elected.
-
-People tell me to rest.
-I know they mean well.
-But rest feels like standing still while waiting for a bell.
-
-I'll sit down for five minutes
-and suddenly recall seventeen different problems that may not exist at all.
-
-My brain treats possibilities
-like they're already true.
-It builds entire catastrophes from a single passing clue.
-
-The truth is—
-I don't want more discipline.
-I don't want another speech about learning how to win.
-
-I don't want productivity tips, or resilience dressed in gold.
-I'm tired of being the strong one.
-Honestly, it's getting old.
-
-I think I just want a room
-inside my own mind,
-where no one needs answers, and no one needs time.
-
-No solutions.
-No wisdom.
-No strength to provide.
-Just a lock on the door and some silence inside.
-
-Not disappearing forever.
-Just for a night.
-Just long enough to put the world down right.
-Just long enough to finally see,
-who I am—
-when nobody needs me.`
-  },
-  {
-    id: 22,
     title: "I'm sorry, I mean I'm not.",
     dataTrack: 'read_poem_sorry',
     text: `There are a lot of things I wanted to say then,
@@ -1231,7 +1118,7 @@ why would I assume it would be me with you?
 And even then, what if you're choosing someone you later wish you never knew?`
   },
   {
-    id: 23,
+    id: 22,
     title: 'Always.',
     dataTrack: 'read_poem_always',
     text: `Always the artist, never the muse.
@@ -1282,7 +1169,7 @@ Born to believe in love—
 forced to wonder how I still could.`
   },
   {
-    id: 24,
+    id: 23,
     title: 'Who are you?',
     dataTrack: 'read_poem_whoareyou',
     text: `Often when you meet someone,
@@ -1334,7 +1221,7 @@ But you never had to be—
 to pull some of the most beautiful poetry so effortlessly out of me.`
   },
   {
-    id: 25,
+    id: 24,
     title: 'Drive',
     dataTrack: 'read_poem_drive',
     text: `"It's just a drive", I tell myself
@@ -1386,7 +1273,7 @@ I think you're worth driving for and facing these fears of mine.
 but that idea I never bought.`
   },
   {
-    id: 26,
+    id: 25,
     title: '"oh how I hope."',
     dataTrack: 'read_poem_hope',
     text: `I hope I'm the love interest in your story
@@ -1440,9 +1327,9 @@ I hope I'm the passenger in your car,
 I hope the thought of me lingers even when it seems I'm too far.`
   },
   {
-    id: 27,
-    title: 'The Fiction Section',
-    dataTrack: 'read_poem_fiction',
+    id: 26,
+    title: 'Fictional',
+    dataTrack: 'read_poem_fictional',
     text: `I've always liked fictional men.
 Long before I met you.
 Before your name became familiar,
@@ -1527,7 +1414,7 @@ every world I've ever been in—
 there's pieces of you in all my fictional men.`
   },
   {
-    id: 28,
+    id: 27,
     title: 'Kintsugi',
     dataTrack: 'read_poem_kintsugi',
     text: `I think it's funny how the broken things are never thrown away.
@@ -1602,7 +1489,7 @@ Not gone. Not erased.
 Just gold, but still the same face.`
   },
   {
-    id: 29,
+    id: 28,
     title: 'The wait is too long',
     dataTrack: 'read_poem_wait',
     text: `I'm waiting for you to write,
@@ -1665,7 +1552,7 @@ don't you think you owe it to yourself to at least try?
 Your confidence is waiting for you to realize that you've never been shy.`
   },
   {
-    id: 30,
+    id: 29,
     title: 'A man written by a woman which is me.',
     dataTrack: 'read_poem_manwritten',
     text: `I think the problem with fictional men is that they set impossible standards.
@@ -1749,394 +1636,7 @@ I just think it's unfair,
 that someone can exist in real life and still feel written by a woman somewhere.`
   },
   {
-    id: 31,
-    title: 'Six Strings',
-    dataTrack: 'read_poem_sixstrings',
-    text: `I think people spend too much time comparing guitars.
-Some are louder.
-Some are older.
-Some are polished enough to hang on a wall like stars.
-
-Some have expensive wood.
-Some have scratches and scars.
-And somehow we've convinced ourselves that value comes from what we are.
-
-But I've never met a guitar that cared what it was made of.
-Only whether it was played,
-whether it was held with love.
-Because a guitar doesn't wake up wishing it had somebody else's sound.
-It just takes the strings it's given and turns them into something profound.
-
-Six strings.
-That's all.
-Not seven.
-Not ten.
-Just six pieces of wire stretched tight again and again.
-
-Yet put them in the right hands,
-and suddenly they can sing.
-Funny how something so ordinary can become such a beautiful thing.
-
-I think gifts are a lot like that.
-They're not really ours to own.
-They're more like borrowed melodies, briefly entrusted, briefly known.
-
-Some people can lead.
-Some people can teach.
-Some can turn complicated things into something others can reach.
-
-Some can write.
-Some can build.
-Some can listen quietly when a hurting heart needs to be healed.
-
-And maybe your gift doesn't look impressive at first glance.
-Neither does a single guitar string— until it's given the chance.
-
-Because no one applauds the tuning.
-Nobody buys tickets for preparation.
-But every beautiful song begins with careful calibration.
-
-The strange thing about talent,
-is it was never meant to stay still.
-A guitar left inside its case, never learns what it can fill.
-
-The strings collect dust.
-The wood grows cold.
-The music remains inside it, but never gets told.
-
-And I wonder if people sometimes do the same.
-Burying gifts beneath fear, comparison, or shame.
-
-Looking at somebody else's stage,
-somebody else's light,
-forgetting that different songs can still be equally right.
-
-Because the point was never to sound exactly alike.
-An orchestra would be awfully boring if every instrument matched the mic.
-
-Some were made for melodies.
-Some were made for rhythm and grace.
-Some were made to carry harmony from one place to another place.
-
-And none of them are lesser for playing a different part.
-After all,
-a song isn't built from one note.
-It's built from every heart.
-
-So maybe that's why
-I love guitars so much.
-Not because they're perfect,
-but because they teach us such—
-
-that being gifted doesn't mean being the best.
-It means recognizing the hands that made you and offering them your best.
-
-And maybe that's gratitude.
-Maybe that's where purpose starts.
-Taking the strings you've been given
-and playing them with all your heart.
-
-Because every good song begins the very same way—
-With a Maker, a guitar, and someone willing to play.`
-  },
-  {
-    id: 32,
-    title: "A Library Is Loneliest When It's the Only Thing That Remembers",
-    dataTrack: 'read_poem_forgotten',
-    text: `I think people misunderstand the question.
-They treat it like a game.
-Would you rather forget everyone,
-or have everyone forget your name?
-
-As if there's a correct answer.
-As if one door hurts less.
-As if grief becomes lighter when you give it a different address.
-
-Personally, I'd choose to be forgotten.
-At least that's what I'd say.
-Let me keep the library.
-You can take my place away.
-
-Because I've spent years collecting people
-the way libraries collect books.
-Some changed my life in a sentence.
-Some only stayed a few looks.
-
-Some arrived with loud chapters.
-Some barely made a sound.
-Some became entire novels before they put themselves down.
-
-And I know exactly where they are.
-Third shelf, second row.
-The people who taught me kindness.
-The people who taught me to go.
-
-The people who stayed too briefly.
-The people who stayed too long.
-The people who became the reason certain songs still sound like songs.
-
-I'd rather keep all of that.
-Every page.
-Every line.
-Even the chapters that hurt— still belong inside my mind.
-
-Because forgetting them feels cruel,
-like burning a book you've read.
-Like pretending a story never happened, because you disliked the way it ended.
-
-So yes,
-let them forget me instead.
-Remove my name from the spine.
-Return me to the shelf and leave no trace behind.
-
-At first, it sounds like the kinder choice.
-The selfless one.
-The brave.
-No one has to miss me if they don't remember I stayed.
-
-But that's the problem.
-The question cheats.
-Both answers grieve the same.
-Because whether you're erased from memory or memory is erased from you, the loss remains.
-
-Either way, someone becomes a stranger.
-Either way, something disappears.
-Either way, a room once filled with laughter ends up echoing for years.
-
-And maybe what frightens me most is not being forgotten one day.
-It's knowing all the people I love are already slipping away.
-
-Not completely.
-Not yet.
-Just slowly, like worn-out ink.
-Like a book left in sunlight, fading faster than you think.
-
-A detail here.
-A story there.
-The exact sound of a laugh.
-The way somebody brushed back their hair.
-
-And suddenly I understand why librarians repair old pages.
-Why they preserve fragile books through decades and through ages.
-
-Because loving something— means fighting its disappearance.
-Even when you know you'll never win that clearance.
-
-So maybe both choices are the very same tragedy.
-One loses the books.
-One loses the library.
-And I suppose if I truly had to choose,
-I'd rather become the story than lose all of you.`
-  },
-  {
-    id: 33,
-    title: 'The Workshop',
-    dataTrack: 'read_poem_workshop',
-    text: `I don't think creativity begins in the hands.
-I think it begins somewhere quieter than that.
-A place between wonder and intention,
-between "what if" and "what's next."
-The hands just happen to be the first ones brave enough to act.
-
-A thought becomes a sketch.
-A sketch becomes a plan.
-A plan becomes a table, built by someone's hands.
-
-A melody becomes a song.
-A sentence finds a page.
-A seed becomes a garden through patience, dirt, and days.
-
-It's funny when you think about it.
-How often we praise the finished piece,
-while forgetting all the ordinary hands that carried it to completion and peace.
-
-The baker kneading dough before sunrise.
-The teacher staying late.
-The carpenter measuring twice so the doorway stands up straight.
-
-The artist mixing colors.
-The nurse adjusting sheets.
-The musician practicing alone before anyone hears the beat.
-
-Different work.
-Different tools.
-Different dreams to pursue.
-Yet somehow every pair of hands is asked to make something new.
-
-And maybe that's the blessing.
-Not that every gift looks the same,
-but that the Maker never needed copies to accomplish His aim.
-
-After all, a workshop full of hammers would be a noisy place.
-Useful, sure—
-but incapable of every task requiring a different grace.
-
-Some hands were made for building.
-Some were made for repair.
-Some were made for planting hope where there wasn't any there.
-
-Some write stories.
-Some design roads.
-Some carry burdens.
-Some lighten loads.
-
-And none of them are lesser for the role they choose to fill.
-Because purpose was never measured by volume, fame, or skill.
-
-A paintbrush cannot be a shovel.
-A violin cannot be a saw.
-Yet both become remarkable when used for what they were made for.
-
-I think that's why the phrase "the work of our hands" always feels bigger than it appears.
-Because it's never just about labor,
-it's about the ideas, the faith, the failures,
-the practice of years.
-
-It's about taking something invisible and giving it a form.
-A dream.
-A solution.
-A shelter from a storm.
-
-And maybe every act of creation is a quiet way of saying,
-"Thank You for trusting me with something worth making."
-
-Not because the work is perfect.
-Not because success is guaranteed.
-But because the hands were given purpose long before they learned what they need.
-
-So if you've been comparing your gift to someone else's art,
-remember:
-a workshop needs many tools,
-not one extraordinary part.
-
-The world is changed by people willing to begin,
-by minds that imagine,
-and hands that follow through again.
-
-And perhaps that's the miracle.
-Not the masterpiece at the end,
-but that hands can help an unseen idea descend.
-
-A blessing isn't always what we receive.
-Sometimes it's what we create, when a thought is placed inside our minds, and our hands decide its fate.`
-  },
-  {
-    id: 34,
-    title: 'Intermission',
-    dataTrack: 'read_poem_intermission',
-    text: `People always say that she's the loud one.
-The funny one.
-The one who somehow finds a joke before anyone finds one.
-
-The one who fills the silence before it starts to sting.
-The one who makes everyone laugh,
-as if laughter fixes everything.
-
-She got good at it.
-Too good, perhaps.
-Turning every aching thought into harmless little acts.
-
-Because if everyone is laughing,
-nobody asks what's wrong.
-And if nobody asks, she never has to be strong.
-
-She calls it coping.
-Everyone else calls it charm.
-No one notices— it's also keeping them from seeing the alarm.
-
-So she keeps performing.
-Morning after night.
-Smiling until her cheeks forget the difference between pretending and delight.
-
-Then she goes home.
-Except home isn't rest.
-There are dinners to prepare,
-small hands to help, another quiet test.
-
-She's the older sister.
-The dependable one.
-The day may finally be over, but her work is never done.
-
-So she keeps going.
-Because someone has to stay.
-And somehow "I'll do it"—
-became the only prayer she knows to say.
-
-People tell her she's resilient.
-They say she's doing well.
-It's funny how survival can become so hard to tell.
-
-Because nobody sees the version of her that stares into the night.
-Wondering why she's so exhausted after winning every fight.
-
-They don't hear the conversations in her head.
-The ones that count every flaw before she goes to bed.
-
-Too loud.
-Too much.
-Too difficult to keep.
-Too broken to be beautiful.
-Too tired to even weep.
-
-She wants to cry.
-God knows she's tired.
-But some tears stay behind your ribs, with no place left to hide.
-
-So they become headaches.
-Heavy breaths.
-Sleepless nights.
-Smiles that look convincing under fluorescent lights.
-
-Sometimes she wonders about the story before her own.
-How some lives begin inside storms they've never known.
-
-She doesn't speak of it often.
-It's only a quiet thread.
-A sentence stitched so carefully most readers skip ahead.
-
-But she remembers.
-Even what was never hers to choose.
-And sometimes inherited grief still leaves inherited bruise.
-
-The cruelest part—
-isn't even the hurting anymore.
-It's how naturally she carries it, like she's done this all before.
-
-She's everyone's safe place.
-Everyone's listening ear.
-Yet somehow no one notices she's quietly disappearing here.
-
-Not because they don't love her.
-Not because they wouldn't care.
-But because she became so convincing at saying, "I'm okay," with air.
-
-She doesn't want applause.
-She doesn't want to be brave.
-She doesn't want another compliment about how well she has behaved.
-
-She just wants to rest.
-Not earn it.
-Not explain.
-Just set the weight down without feeling guilty for the pain.
-
-Maybe that's what peace is.
-Not happiness.
-Not delight.
-Just one evening where her mind doesn't have to fight.
-
-One morning where breathing isn't another task.
-One friendship where someone remembers to ask.
-
-Not because she's falling apart,
-but because she matters, too.
-Because even the ones who keep everyone together need someone to hold them through.
-
-So if you ever meet a girl who laughs before she sighs,
-remember—
-sometimes the brightest rooms are built by people who've forgotten what it feels like to rest their own tired eyes.`
-  },
-  {
-    id: 35,
+    id: 30,
     title: 'Balanced',
     dataTrack: 'read_poem_balanced',
     text: `There's a scale sitting quietly in my mind.
@@ -2219,13 +1719,279 @@ It only tells me how long I've forgotten that worth—
 was never measured on earth.`
   },
 {
-  id: 36,               // ← next number after the last poem
-  title: 'Your Title',
-  dataTrack: 'read_poem_yourtitle',   // lowercase, underscores, no spaces
-  text: `Your poem text here.
-Line two.
+  id: 31,               // ← next number after the last poem
+  title: 'Man in Love',
+  dataTrack: 'read_poem_mainlove',   // lowercase, underscores, no spaces
+  text: `I wonder what a man is like when he's truly in love.
+When he looks into a person's eyes,
+and glimpses an ethereal energy reserved for above.
 
-New stanza starts here.`
+Does he write about them?
+This person, the feelings-
+what does he see?
+I ask because I don't know if a man has ever truly been in love with me.
+
+Because from what I know from films and books,
+there's a change in the way he acts, that starts with the second time he looks.
+
+But if love was a full meal,
+I've only had the appetizer version
+just a taste, but more than enough to develop a heartbroken sort of aversion.
+
+So I'm left to wonder what it's like...
+If he's nervous at the door,
+when he takes a second glance,
+if it's because he needed to take in the sight of me for just a second more.
+
+Does he plan around it?
+or make plans with it in mind?
+Does he leave secret messages that he hopes I'll one day find?
+
+In song lyrics hastily posted in text messages he drafted before they were sent,
+when a man is truly in love...
+does he always say what he meant?
+
+Does he think of me and roses?
+Roses that he should've bought.
+Am I just a passing moment or an everlasting thought?
+
+Does he go home safer?
+Does he hold space in his heart?
+Does he take the time to kiss the pain that is hidden behind such poetic art?
+
+I wonder what he's like...
+but that man, I haven't met.
+So if he wonders what a woman is like when she's truly in love,
+I don't know more than just the fictional version of her, yet.`
+},
+{
+  id: 32,               // ← next number after the last poem
+  title: 'When will it be my turn?',
+  dataTrack: 'read_poem_myturn',   // lowercase, underscores, no spaces
+  text: `Some might say I'm lonely.
+Nobody has loved me for years.
+At least not been *in* love with me—
+and of course that brings up some fears.
+
+It's not easy to be alone,
+to sit with so many consuming thoughts.
+But if we were a society devoid of emotion,
+robots could easily take our spots.
+
+People say,
+"Love arrives when you least expect."
+I suppose that's comforting,
+if you're not the one checking every knock that never reaches your doorstep.
+
+Sometimes I wonder if my story skipped a chapter.
+Like everyone else was handed a script,
+while I was cast to applaud the ending from somewhere after.
+
+I've become quite good at celebrating love.
+I matchmake.
+I cheer.
+I smile when my friends tell me they're finally calling someone "dear."
+
+And I mean it.
+I truly do.
+Because love is beautiful, especially when it's found you.
+
+Still...
+there's a quiet question that lingers when the room grows dim.
+When will someone look at me the way I keep looking at him?
+
+Not just for a moment.
+Not just in passing.
+Not because I happened to be standing there.
+But intentionally.
+Completely.
+Like they had searched every crowded room and still decided I was the answer waiting there.
+
+Perhaps that's selfish.
+Perhaps it's human.
+I'm still trying to learn the difference.
+Because no matter how independent I've become, there's still a corner of my heart that keeps a little distance.
+
+Reserved,
+not for just anyone—
+but for the person who won't ask me-
+to become someone else before they stay entirely.
+
+The frightening part isn't falling in love.
+It's finally being loved back.
+Because what if they discover all the unfinished versions I've been trying to unpack?
+
+What if they notice the overthinking,
+the talking too much,
+the nights I don't know how to explain?
+What if they love me...
+until they don't,
+and I'm left learning how to survive that kind of pain?
+
+So perhaps, I've been standing with one foot on hope,
+and the other already halfway to goodbye.
+Not because
+I expect people to leave—
+but because I've grown used to preparing before they try.
+
+Some days,
+I think I've accepted it.
+That maybe love simply belongs to other lives.
+That perhaps, my role was never to be chosen,
+only to witness how choosing changes everyone else's eyes.
+
+And yet...
+there's this stubborn,
+almost embarrassing little part of me that refuses to disappear.
+The smallest voice, 
+barely louder than a whisper,
+still insists,
+"Maybe next year."
+
+Maybe one day,
+someone will read me without skipping pages.
+Maybe they'll stay through every chapter,
+every silence,
+every age that changes.
+
+Maybe they'll see the parts I've spent years trying to hide,
+and instead of walking away,
+they'll quietly sit beside.
+
+Until then,
+I'll keep pretending I've made peace with waiting.
+Though if I'm honest,
+I'm only certain about 99.9%.
+Because the remaining 0.1% still glances whenever the door opens.`
+},
+{
+  id: 33,               // ← next number after the last poem
+  title: 'Suffocating',
+  dataTrack: 'read_poem_suffocating',   // lowercase, underscores, no spaces
+  text: `Nobody can tell that I can't breathe,
+so I scratch at the rip in my jeans.
+I'm hoping that if I scratch hard enough,
+I'll forget what this stupid feeling means.
+
+I can't breathe, I feel it,
+like a heaviness in my chest.
+I'm sitting alone, desperately wishing that my brain would rest.
+
+Somebody tries to talk to me,
+but I stopped paying attention long ago.
+This cute little part of me is my least favorite for people to suddenly know.
+
+They never stay long after this,
+I'm abandoned,
+like a broken doll, something someone once admired,
+someone for who they would never fall.
+
+I'm always alone when it happens.
+Silly little me,
+I'm just sitting here, so how bad could my wounds really be?
+
+Then something shifts,
+I'm falling into a boiling pool- head first,
+I'm sprinting 10 miles, panting from the thirst.
+
+I'm spinning in checkerboard circles,
+I'm scratching it- the seat,
+he asked if I'm hungry but if I'm anxious,
+I can't eat.
+
+I'm suffocating in the fresh air,
+I'm slamming my head into a wall,
+they never stay long after this,
+they always remember not to call.
+
+Suddenly I'm screaming in my dreams,
+I'm refusing any caffeine,
+if they knew how hard I fought to stay, maybe they wouldn't be so mean.
+
+I'm shaking on the floor,
+rough emotion stuck in air,
+and I hate when this happens,
+then they try to touch my hair.
+
+I'm moved,
+I'm moving, pacing back and forth,
+I'm cemented to the past, 
+and then, of course I start crying.
+The frustrated tears always come fast.
+
+They never stay long after this.
+After I've shown too much.
+And it has nothing to do with my appearance,
+just my mind's strong punch.
+
+It's a solo rescue mission,
+only me against me.
+And they never stay long after this,
+because I'm not who they wanted me to be.
+
+I put the window down because now, I really can't breathe.
+And it doesn't make it any better that I know that they're about to leave.
+
+I tell them to pull over, I can't do it.
+I need to stop.
+And it always happens so suddenly, we had just been laughing in a coffee shop.
+
+They follow close behind, 
+they always follow at the beginning,
+then they whisper a goodbye.
+
+While my ears are still ringing,
+burning up from the inside.
+There's ants on my skin,
+this is what I always remember when people ask me how I've been.
+
+Heat radiates off the ground,
+so they put a cold cup in my hand.
+They helped me get up, 
+they balanced me while I try to stand.
+
+they whisper that the ice is supposed to help,
+cold water cools the side of my face,
+my heart slows down then,
+I almost forgot that it had a non-panicked pace.`
+},
+{
+  id: 34,               // ← next number after the last poem
+  title: 'A Temporary Forever',
+  dataTrack: 'read_poem_temporaryforever',   // lowercase, underscores, no spaces
+  text: `I'm gonna be single forever.
+I know how that may sound,
+but I don't mean it that way,
+I believe that love will be found.
+
+But still single either way.
+I'm kind of stuck with just me.
+An individual in a partnership, because through my eyes,
+he will never see.
+
+I know the story of every scar.
+Every battle I've ever fought.
+Every wish I've ever made.
+Every dumb item I've ever bought.
+
+Only I will ever memorize the story behind every tear.
+You know that I hesitate, but only I know because of which fear.
+
+I get a sinlge body, a single chance to do life right.
+Not a single second more no matter how hard I will fight.
+
+I know every fall,
+every time I pick myself up.
+When I've been absolutely drained or somehow still been an overflowing cup.
+
+I've known myself forever.
+She's been there everytime.
+And to abandon her would be the utmost crime.
+
+But one day,
+someone will be there.
+And he'll know me very well,
+and he'll speak of two individuals and the story of how we both fell.`
 }
 ];
 
