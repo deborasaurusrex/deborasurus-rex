@@ -9,7 +9,7 @@
 /* ═══ DINO GAME ═══ */
 (function() {
   const UNLOCK_KEY   = 'debo-cat-unlocked';
-  const TARGET_SCORE = 1900;
+  const TARGET_SCORE = 2000;
   const CW = 600, CH = 150;
   const GROUND_Y = 118; // bottom of ground line
 
