@@ -27,7 +27,6 @@ const ABOUT_CATEGORIES = {
     rows: [
       { label: 'Full name',   value: 'Deborah Kate P. Santiago' },
       { label: 'Goes by',     value: 'Kate, Deb, Deborah, Debibi, Debs, Katie' },
-      { label: 'Age',         value: '18' },
       { label: 'Birthday',    value: 'February 19, 2008 🎂' },
       { label: 'Born in',     value: 'Barangka, Marikina City' },
       { label: 'Lives in',    value: 'Antipolo City' },
@@ -54,24 +53,22 @@ const ABOUT_CATEGORIES = {
     rows: [
       { label: 'Elementary',    value: 'Marikina Elementary School' },
       { label: 'High School',   value: 'Sta. Elena High School' },
-      { label: 'University',    value: 'University of the Philippines (soon!) 🎉' },
+      { label: 'University',    value: 'University of the Philippines' },
       { label: 'Course',        value: 'BS Civil Engineering' },
-      { label: 'Fave subject',  value: 'Recess — and also Trigonometry & Pre-Calculus 📐' },
+      { label: 'Fave subject',  value: 'depende kung 3 yan' },
       { label: 'Least fave',    value: 'Physics and Chemistry 😵' },
     ]
   },
 
   hobbies: {
-    icon: '🎸',
+    icon: '🥁',
     title: 'Hobbies & Interests',
     type: 'rows',
     rows: [
-      { label: 'Hobbies',     value: 'Reading, playing the drums' },
-      { label: 'Free time',   value: 'Songwriting, writing poems' },
-      { label: 'Sport',       value: 'Taekwondo 🥋' },
+      { label: 'Hobbies',     value: 'Reading' },
+      { label: 'Free time',   value: 'Songwriting, writing poems, sometimes drawing' },
+      { label: 'Sport',       value: 'sikrit' },
       { label: 'Instruments', value: 'Drums 🥁, Guitar, Bass, a bit of Piano' },
-      { label: 'Creates',     value: 'Writes, draws sometimes, sings — very lowkey about it' },
-      { label: 'Reading',     value: 'Absolutely yes 📚' },
     ]
   },
 
@@ -95,9 +92,6 @@ const ABOUT_CATEGORIES = {
       { label: 'Fave movie',   value: 'Red Notice 🎬' },
       { label: 'Fave show',    value: 'Avatar: The Last Airbender, High Potential 📺' },
       { label: 'Fave book',    value: 'Dork Diaries series 📖' },
-      { label: 'Fave song',    value: '"Still God" by Genavieve Linkowski 🎵' },
-      { label: 'Fave artist',  value: 'Genavieve Linkowski' },
-      { label: 'Music genre',  value: 'Soft pop 🎶' },
       { label: 'Games',        value: 'Honor of Kings, Roblox, horror games with plot & multiple endings — anything that spikes adrenaline 🎮' },
     ]
   },
